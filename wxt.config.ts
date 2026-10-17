@@ -44,7 +44,7 @@ export default defineConfig({
     host_permissions: SALESFORCE_HOST_PERMISSIONS,
     browser_specific_settings: {
       gecko: {
-        id: "salesforce-pilot@stiven-gonzalez.raycast",
+        id: "salesforce-pilot@stiven-gonzalez",
         // data_collection_permissions requires Firefox 140+ / Android 142+
         strict_min_version: "142.0",
         data_collection_permissions: {
