@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# WXT / build
+.output/
+.wxt/
+*.zip
+
+# misc
+.DS_Store
+*.log
+coverage/
+.yarn/
+.pnp.*

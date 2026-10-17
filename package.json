@@ -1,0 +1,24 @@
+{
+  "name": "salesforce-pilot-browser-extension",
+  "description": "Browser companion for the Raycast Salesforce Pilot extension.",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox --mv3",
+    "build": "wxt build && wxt build -b firefox --mv3 && node scripts/pack-gecko.mjs",
+    "build:chromium": "wxt build",
+    "build:firefox": "wxt build -b firefox --mv3 && node scripts/pack-gecko.mjs",
+    "zip": "wxt zip && wxt zip -b firefox --mv3 && node scripts/pack-gecko.mjs",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10",
+    "wxt": "^0.20.11"
+  }
+}

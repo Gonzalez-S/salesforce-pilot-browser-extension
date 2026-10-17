@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salesforce Pilot</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="icon-48.png" alt="" width="28" height="28" />
+        <div>
+          <h1>Salesforce Pilot</h1>
+          <p class="subtitle">Companion for Raycast</p>
+        </div>
+      </header>
+
+      <section>
+        <p id="status" class="status">Loading…</p>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Orgs</h2>
+          <button type="button" id="clear-registry" class="text-button" hidden>Clear</button>
+        </div>
+        <ul id="org-list" class="org-list"></ul>
+      </section>
+    </main>
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
